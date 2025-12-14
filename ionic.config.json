@@ -1,0 +1,8 @@
+{
+  "name": "lingua-chat",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react-vite",
+  "mode": "ios"
+}

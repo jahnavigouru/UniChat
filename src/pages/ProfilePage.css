@@ -1,0 +1,397 @@
+.profile-container {
+  background: #f9fafb;
+  min-height: 100%;
+  padding-bottom: 80px; /* Space for tabs */
+}
+
+.profile-header {
+  background: linear-gradient(135deg, #0ea5e9 0%, #0284c7 100%);
+  padding: 40px 20px;
+  text-align: center;
+  color: white;
+}
+
+.profile-avatar {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.avatar-initials-large {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  color: #0ea5e9;
+  font-weight: 700;
+  font-size: 2rem;
+  border-radius: 50%;
+}
+
+.profile-name {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: white;
+}
+
+.profile-language {
+  display: block;
+  font-size: 0.875rem;
+  opacity: 0.9;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.edit-button {
+  --border-color: white;
+  --color: white;
+  --border-width: 2px;
+  margin-top: 8px;
+}
+
+.profile-details {
+  padding: 20px;
+  background: #f9fafb;
+  margin-top: -20px;
+  border-radius: 20px 20px 0 0;
+}
+
+.profile-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  padding: 0 20px;
+  margin-top: -40px;
+  position: relative;
+  z-index: 1;
+}
+
+.profile-stat-card {
+  --background: white;
+  margin: 0;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.profile-stat-card ion-card-header {
+  padding: 16px 8px;
+}
+
+.profile-stat-card .stat-icon {
+  font-size: 28px;
+  color: #0ea5e9;
+  margin-bottom: 8px;
+}
+
+.profile-stat-card .stat-number {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #111827;
+  margin: 0;
+  padding: 0;
+}
+
+.profile-stat-card .stat-text {
+  font-size: 0.75rem;
+  color: #6b7280;
+  display: block;
+  margin-top: 4px;
+}
+
+.detail-card {
+  margin-bottom: 16px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  --background: white;
+}
+
+.detail-card ion-card-header {
+  padding: 16px 16px 8px;
+}
+
+.detail-card ion-card-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #111827;
+}
+
+.detail-card ion-card-content {
+  padding: 8px 16px 16px;
+}
+
+.activity-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.activity-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  background: #f9fafb;
+  border-radius: 8px;
+}
+
+.activity-icon {
+  font-size: 20px;
+  color: #0ea5e9;
+}
+
+.activity-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.activity-text {
+  font-size: 0.875rem;
+  color: #374151;
+  font-weight: 500;
+}
+
+.activity-time {
+  font-size: 0.75rem;
+  color: #9ca3af;
+}
+
+.no-activity {
+  font-size: 0.875rem;
+  color: #9ca3af;
+  text-align: center;
+  padding: 20px;
+}
+
+.achievements-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.achievement-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  background: #f0f9ff;
+  border-radius: 8px;
+  border: 1px solid #bae6fd;
+}
+
+.achievement-icon {
+  font-size: 24px;
+  color: #f59e0b;
+}
+
+.achievement-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.achievement-title {
+  font-size: 0.875rem;
+  color: #111827;
+  font-weight: 600;
+}
+
+.achievement-desc {
+  font-size: 0.75rem;
+  color: #6b7280;
+}
+
+.profile-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.edit-name-input {
+  --padding-start: 12px;
+  --padding-end: 12px;
+  --background: white;
+  border-radius: 8px;
+  margin: 8px 0;
+}
+
+.streak-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 16px;
+  background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+  border-radius: 12px;
+}
+
+.streak-main {
+  text-align: center;
+}
+
+.streak-number {
+  display: block;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #f59e0b;
+  line-height: 1;
+}
+
+.streak-label {
+  display: block;
+  font-size: 0.875rem;
+  color: #92400e;
+  font-weight: 600;
+  margin-top: 4px;
+}
+
+.streak-details {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  text-align: center;
+}
+
+.streak-detail {
+  font-size: 0.8125rem;
+  color: #78350f;
+}
+
+.proficiency-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.proficiency-item {
+  padding: 12px;
+  background: #f9fafb;
+  border-radius: 8px;
+}
+
+.proficiency-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.proficiency-lang {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #111827;
+}
+
+.proficiency-level {
+  font-size: 0.75rem;
+  color: #6b7280;
+  font-weight: 500;
+}
+
+.proficiency-bar {
+  height: 8px;
+  background: #e5e7eb;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 4px;
+}
+
+.proficiency-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #0ea5e9 0%, #0284c7 100%);
+  border-radius: 4px;
+  transition: width 0.3s ease;
+}
+
+.proficiency-percent {
+  font-size: 0.75rem;
+  color: #6b7280;
+}
+
+.achievement-item.locked {
+  opacity: 0.6;
+  background: #f3f4f6;
+}
+
+.achievement-item.locked .achievement-icon {
+  color: #9ca3af;
+}
+
+.card-title-icon {
+  font-size: 20px;
+  color: #0ea5e9;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+@media (max-width: 768px) {
+  .profile-stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+    padding: 0 16px;
+  }
+  
+  .profile-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .profile-actions ion-button {
+    width: 100%;
+  }
+}
+
+.detail-item {
+  --padding-start: 0;
+  --padding-end: 0;
+  margin-bottom: 16px;
+  --background: white;
+  --border-color: #f3f4f6;
+}
+
+.detail-item ion-label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #6b7280;
+  margin-bottom: 8px;
+}
+
+.detail-item ion-input {
+  font-size: 1rem;
+  color: #111827;
+}
+
+.profile-stats {
+  display: flex;
+  justify-content: space-around;
+  padding: 24px 0;
+  margin-top: 24px;
+  border-top: 1px solid #e5e7eb;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.stat-value {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #0ea5e9;
+}
+
+.stat-label {
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
